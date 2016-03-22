@@ -1,5 +1,7 @@
 ## playground
 
+*Pre-requisite: Java 8*
+
 #### seesaw
 An exercise to determine if Manhattan Distance exists
     
