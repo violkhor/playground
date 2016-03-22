@@ -3,7 +3,7 @@
 #### seesaw
 An exercise to determine if Manhattan Distance exists
     
-    package: com.seesaw
+    package: com.playground.seesaw
      
     Example Input:  
     3 
@@ -15,7 +15,7 @@ An exercise to determine if Manhattan Distance exists
 #### swing
 An exercise to move the elements in a square matrix one step clockwise
 
-    package: com.swing
+    package: com.playground.swing
     Example Input:
     3
     1 2 3
