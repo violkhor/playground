@@ -60,6 +60,23 @@ public class Main {
 
     private static boolean checkAdjacent(int[][] matrix, int kValue, int row, int col) {
         int minRow, minCol, maxRow, maxCol;
+        boolean r1 = false, r2 = false, r3 = false, r4 = false;
+        if (kValue == 1) {
+
+            if (row > 0) {
+                r1 = matrix[row - 1][col] == matrix[row][col];
+            }
+            if (row < matrix.length - 1) {
+                r2 = matrix[row + 1][col] == matrix[row][col];
+            }
+            if (col > 0) {
+                r3 = matrix[row][col - 1] == matrix[row][col];
+            }
+            if (col == matrix[0].length) {
+                r4 = matrix[row][col + 1] == matrix[row][col];
+            }
+            return r1 || r2 || r3 || r4;
+        }
         if (row - kValue + 1 < 0) {
             minRow = 0;
         } else {
